@@ -4,7 +4,7 @@ function Home() {
   const [allNewsData, setAllNewsData] = useState([]);
 
   useEffect(() => {
-    fetch("https://newsapi.org/v2/top-headlines?country=in&apiKey=a28c557ae3b348d1a678175c292a3348")
+    fetch("http://newsapi.org/v2/top-headlines?country=in&apiKey=a28c557ae3b348d1a678175c292a3348")
       .then((res) => res.json())
       .then((data) => setAllNewsData(data.articles));
       // setting fetched data in our useState hook......................
