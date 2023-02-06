@@ -4,9 +4,9 @@ function Home() {
   const [allNewsData, setAllNewsData] = useState([]);
 
   useEffect(() => {
-    fetch("https://newsapi.org/v2/top-headlines?country=in&apiKey=a28c557ae3b348d1a678175c292a3348")
+    fetch("https://inshorts.deta.dev/news?category=all")
       .then((res) => res.json())
-      .then((data) => setAllNewsData(data.articles));
+      .then((data) => setAllNewsData(data.data));
       // setting fetched data in our useState hook......................
   }, []);
 
@@ -17,7 +17,7 @@ function Home() {
       ) : (
         <>
           {allNewsData.map((item,index) => (
-            <NewsCard key={item.title} data={item} index={index}/>
+            <NewsCard key={item.id} data={item} index={index}/>
           ))}
         </>
       )}

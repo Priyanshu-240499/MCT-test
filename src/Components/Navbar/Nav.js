@@ -61,7 +61,7 @@ document.addEventListener('scroll',animateNav)
                 </Link>
               </li>
               <li className="nav-item">
-                <Link to={{pathname:"/Category/general"}} className="nav-link">General</Link>
+                <Link to={{pathname:"/Category/national"}} className="nav-link">National</Link>
               </li>
               <li className="nav-item">
                 <Link to={{pathname:"/Category/business"}} className="nav-link" aria-current="page">
@@ -72,8 +72,8 @@ document.addEventListener('scroll',animateNav)
                 <Link to={{pathname:"/Category/sports"}} className="nav-link">Sports</Link>
               </li>
               <li className="nav-item">
-                <Link to={{pathname:"/Category/health"}} className="nav-link" aria-current="page">
-                  Health
+                <Link to={{pathname:"/Category/world"}} className="nav-link" aria-current="page">
+                  World
                 </Link>
               </li>
               <li className="nav-item">
